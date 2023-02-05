@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Minúsculas/Mayúsculas</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+		//Se declaran las variables
+        var texto = prompt("Por favor, introduce un texto:");
+        var decision = prompt("¿Quieres pasarlo a mayusculas o minusculas? (Escribe mayusc/minusc): ");
+        
+        //Se crea un condicional para saber si el usuario quiere el texto en mayúsculas o minúsculas
+        if (decision == "mayusc") {
+            document.write("TEXTO: " + texto.toUpperCase() + ".");
+        } else if (decision == "minusc") {
+            document.write("TEXTO: " + texto.toLowerCase() + ".");
+        }
+	</script>
+</body>
+</html>

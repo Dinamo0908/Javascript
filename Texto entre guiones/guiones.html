@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Texto entre guiones</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+    //Se declaran las variables
+    var cadena = prompt("Introduce una cadena de texto:");
+    var numercaract = cadena.length;    
+    var caracter;
+
+    //Se crea un bucle for para agregar "-" entre caracteres
+    for (i = 0; i < numercaract; i++) {
+	caracter = cadena.charAt(i);    
+	if (i == numercaract - 1) {
+		document.write(caracter);
+	    }
+	else {
+		document.write(caracter + "-");
+	    }
+    }
+	</script>
+</body>
+</html>

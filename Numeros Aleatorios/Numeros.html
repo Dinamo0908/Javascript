@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Números Aleatorios</h2>
+
+<script>
+//Se crea una función para dar un número aleatorio
+function random(min, max) {
+var numero = Math.round((Math.random() * (max-min)) + min);
+return numero;
+}
+
+//Empieza el programa
+var primerNumero = Number(prompt("Introduce un numero"));
+var segundoNumero = Number(prompt("Introduce otro numero"));
+var resultado = random(primerNumero, segundoNumero);
+
+//Se devuelve el resultado y finaliza el programa
+document.write(resultado);
+</script>
+
+</body>
+</html>

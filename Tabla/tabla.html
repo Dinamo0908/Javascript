@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>título</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+    //Se declaran las variables
+        var i, j;
+    //Se pide el número de filas y columnas
+        var filas = Number(prompt("Introduce un numero de filas"));
+        var columnas = Number(prompt("Introduce un numero de columnas"));
+    //Se multiplican las filas por las columnas e inicia la tabla
+       var result = filas * columnas;
+        document.write("<table border>");
+    //Se crean dos bucles for para crear filas para las filas y celdas para las columnas
+        for (i = 0; i < filas; i++) {
+            document.write("<tr>");
+            for (j = 0; j < columnas; j++) {
+                document.write("<td>");
+                document.write(result);
+                result--;
+                document.write("</td>");
+                }
+            document.write("</tr>");
+            }
+    //Se cierra la tabla
+        document.write("</table>");
+	</script>
+</body>
+</html>

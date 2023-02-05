@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Numeros</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+        //Se declaran las variables
+		var i;
+        var num;
+        var uno = 0;
+        var dos = 0;
+        var tres = 0;
+        //Se crea un bucle do while para dar tres números aleatorios que no se repiten
+        do {
+            num = Math.floor((Math.random() * 99) + 1);
+            if ((num != uno) && (num != dos) && (num != tres)) {
+                document.write(num + "<br>");
+                i++;
+                if (i == 1) {
+                    uno = num;
+                }
+                if (i == 2) {
+                    dos = num;
+                }
+                if (i == 3) {
+                    tres = num;
+                }
+            }
+        } while (i < 3);
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>título</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<script>
+    //Se  declara la variable para concatenar con el string
+		var resultado = "";
+
+        //Siempre que el usuario pulse aceptar, ocurrirá este bucle. Sino, se da el resultado y finaliza el programa
+        do {
+            //Se pide una oración
+            var cadena = prompt("Introduce una oracion:");
+
+            //Si resultado esta vacío, se une a la cadena, sino se concatena con un guión
+            if (resultado == "") {
+                resultado = resultado + cadena;
+            } else {
+                resultado = resultado + "-" + cadena;
+            }
+        } while (confirm("Deseas seguir?"));
+        document.write(resultado);
+	</script>
+</body>
+</html>
